@@ -1,0 +1,104 @@
+@import './style/variables';
+@import './style/nav';
+@import './style/footer';
+@import './style/work';
+@import './style/contact';
+
+.App {
+    text-align: center;
+    height: auto;
+    font-size: 2vh;
+    //background: url('../public/images/background3.jpg');
+    //background: linear-gradient($color1,$color2, $color3,$color4);
+    background: linear-gradient($color2 , black);
+    color: $white;
+}
+
+//flex center function ( mixin )    //use '@include flexCenter(column);' to use this function
+@mixin flexCenter($direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+//use '@extend nav;' to inherit, extend and overwrite 'nav' style
+
+//home
+.home {
+        @include flexCenter(column);
+        padding: 1rem;
+        margin-top:3px;
+        .home-about, .home-skills, .home-work{
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-style:groove;
+            padding: 10px;
+            border-color: $color4;
+        }
+        //home - about me section
+        .home-about{
+                width: 100%;
+                white-space: pre-line;  //we need this for \n to work in a paragraph
+                @include flexCenter(row);
+                
+                .photo{ 
+                    width: 20%;
+                    background-image: url('../public/images/selfimage2.jpg');
+                    background-size: cover;
+                    width: 40vmin;
+                    height: 40vmin;
+                    justify-content: flex-start;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 2vh;
+                    border: 4px solid $black;
+                }
+                .description{
+                    width:60%;
+                    min-width: 30;
+                    justify-content: flex-end;
+                    flex-wrap: wrap;
+                    margin-top: 1vh;
+                    color: $white;
+                    
+                }  
+        }
+        .home-skills{
+            width: 100%;
+            min-width: 350px;
+        }
+        .home-work{
+                width: 100%;
+                min-width: 350px;
+                top: 0;
+                bottom: 0;
+                .title{
+                    font-weight: bold;
+                    font-size: large;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 10px;
+                }
+                .work{
+                    @extend .work;
+                    background-color: $color1;
+                }
+        }
+
+.App div img{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+}
+
+
+
+
+
+
