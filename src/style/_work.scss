@@ -2,14 +2,16 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
-    border: $black;
-    border: 2px solid $black;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    box-shadow: rgba(0, 0, 0, 0.1);
 
     .work-grid-container{
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+        border: $black;
+        border: 2px solid $black;
+        margin-top: 6px;
+        margin-bottom: 6px;
         width: 100%;
         min-height: 100px;
         height: 100%;

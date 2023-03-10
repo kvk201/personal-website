@@ -5,7 +5,7 @@
   justify-content: center;
   align-content: space-between;
   padding: 0.6rem;
-  background-color: #1e1f26;
+  background: linear-gradient(black, #1E1F26);
 }
 .nav .nav-title {
   padding: 10px;
@@ -78,14 +78,16 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
+}
+.work .work-grid-container, .home .home-work .work .work-grid-container {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
   border: #4d648d;
   border: 2px solid #4d648d;
   margin-top: 6px;
   margin-bottom: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1);
-}
-.work .work-grid-container, .home .home-work .work .work-grid-container {
   width: 100%;
   min-height: 100px;
   height: 100%;
