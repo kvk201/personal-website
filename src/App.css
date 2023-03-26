@@ -101,7 +101,6 @@
   min-height: 100px;
 }
 .contact {
-  background-color: red;
   width: 100%;
   min-height: 300px;
 }
@@ -186,4 +185,8 @@
 .home .App div img {
   flex-grow: 1;
   flex-shrink: 1;
+}
+
+.home-skills a {
+  color: yellow;
 }/*# sourceMappingURL=App.css.map */
