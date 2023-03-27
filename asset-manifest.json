@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7e074d12.css",
+    "main.js": "/static/js/main.04658b03.js",
+    "static/media/selfimage2.jpg": "/static/media/selfimage2.9de3639292b9d7fbd482.jpg",
+    "static/media/sass-logo.png": "/static/media/sass-logo.b707035b1cf162d0632c.png",
+    "static/media/js-logo.png": "/static/media/js-logo.99752322204908d2654a.png",
+    "static/media/node-logo.png": "/static/media/node-logo.99ec70cdb4d790f954e4.png",
+    "static/media/css-logo.png": "/static/media/css-logo.70f682731da0dc79e8be.png",
+    "index.html": "/index.html",
+    "main.7e074d12.css.map": "/static/css/main.7e074d12.css.map",
+    "main.04658b03.js.map": "/static/js/main.04658b03.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e074d12.css",
+    "static/js/main.04658b03.js"
+  ]
+}
