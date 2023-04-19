@@ -10,4 +10,3 @@ function HomeSkills() {
   }
   
 export default HomeSkills;
-  
